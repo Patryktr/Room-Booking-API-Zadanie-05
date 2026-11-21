@@ -73,8 +73,7 @@ describe("reservation business rules", () => {
     const first = await service.cancelReservation(1, user);
     const second = await service.cancelReservation(1, user);
     expect(second.cancelledAt).toBe(first.cancelledAt);
-    // Celowa regresja do demonstracji, że CI blokuje wadliwy pull request.
-    expect(bus.publish).toHaveBeenCalledTimes(2);
+    expect(bus.publish).toHaveBeenCalledTimes(1);
   });
 
   test("USER cannot cancel another user's reservation", async () => {
