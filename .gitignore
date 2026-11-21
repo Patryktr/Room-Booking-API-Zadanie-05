@@ -2,3 +2,5 @@ node_modules/
 .env
 coverage/
 .env.test
+output/pdf/rendered/
+output/pdf/*.png
