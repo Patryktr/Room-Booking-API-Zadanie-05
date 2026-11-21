@@ -102,7 +102,7 @@ story = [Spacer(1, 32*mm), P("SPRAWOZDANIE", "TitleX"),
 
 meta = Table([
     [P("Repozytorium", "Small"), P("github.com/Patryktr/Room-Booking-API-Zadanie-05")],
-    [P("Widoczność", "Small"), P("prywatne")],
+    [P("Widoczność", "Small"), P("publiczne")],
     [P("Gałąź / commit", "Small"), P("main / ca0e783")],
     [P("Data weryfikacji", "Small"), P("21.11.2026")],
 ], colWidths=[38*mm, 120*mm])
@@ -244,7 +244,7 @@ checks = [
     ("Testy jednostkowe ≥ 12", "18 — spełnione"), ("Testy integracyjne ≥ 8", "8 — spełnione"),
     ("Dockerfile i Compose", "spełnione"), ("Migracje, healthcheck, shutdown", "spełnione"),
     ("Eventy i audit log", "spełnione"), ("GitHub Actions + badge", "spełnione"),
-    ("Scenariusz red/green PR", "spełnione"), ("Prywatne repozytorium", "spełnione"),
+    ("Scenariusz red/green PR", "spełnione"), ("Publiczne repozytorium", "spełnione"),
 ]
 ct = Table([[P(a), P(b)] for a,b in checks], colWidths=[96*mm, 69*mm])
 ct.setStyle(TableStyle([("GRID", (0,0), (-1,-1), .4, LINE), ("ROWBACKGROUNDS", (0,0), (-1,-1), [colors.white, LIGHT]),
