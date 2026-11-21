@@ -1,0 +1,12 @@
+process.env.NODE_ENV = "test";
+process.env.STORAGE = "postgres";
+process.env.PORT = "3000";
+process.env.API_URL = "http://localhost:3000";
+process.env.DATABASE_URL ||= "postgresql://room_booking:room_booking_test@127.0.0.1:5434/room_booking_test";
+process.env.JWT_SECRET ||= "test-jwt-secret-that-is-longer-than-thirty-two-characters";
+process.env.JWT_EXPIRES_IN = "15m";
+process.env.ADMIN_EMAIL = "admin@example.test";
+process.env.ADMIN_PASSWORD = "admin-test-password";
+process.env.DEMO_USER_PASSWORD = "user-test-password";
+process.env.DEMO_ROOM_ID = "1";
+process.env.DISABLE_APP_OVERLAP_CHECK = "0";
